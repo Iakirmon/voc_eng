@@ -13,8 +13,13 @@ jobs:
       - name: Checkout repo
         uses: actions/checkout@v3
 
-      - name: Zainstaluj zależności
-        run: brew install jq
+      - name: Sprawdź i zainstaluj jq
+        run: |
+          if ! command -v jq &> /dev/null; then
+            brew install jq
+          fi
 
-      - name: Uruchom powiadomienie
-        run: ./scripts/vocab.sh
+      - name: Debugowanie skryptu
+        run: |
+          chmod +x ./scripts/vocab.sh
+          ./scripts/vocab.sh || echo "Błąd skryptu: $?"
