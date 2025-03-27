@@ -1,7 +1,7 @@
 #!/bin/zsh
 
 # Konfiguracja
-NTFY_TOPIC="twoj-temat-ntfy"
+NTFY_TOPIC="vocab-reminder"
 API_URL="https://random-word-api.herokuapp.com/word?number=10"
 
 # Pobierz 10 słówek
