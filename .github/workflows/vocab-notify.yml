@@ -19,7 +19,8 @@ jobs:
             brew install jq
           fi
 
-      - name: Debugowanie skryptu
-        run: |
-          chmod +x ./scripts/vocab.sh
-          ./scripts/vocab.sh || echo "Błąd skryptu: $?"
+      - name: Ustaw uprawnienia do skryptu
+        run: chmod +x vocab.sh  # Poprawiona ścieżka
+
+      - name: Uruchom skrypt
+        run: ./vocab.sh  # Poprawiona ścieżka
