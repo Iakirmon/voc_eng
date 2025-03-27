@@ -1,0 +1,20 @@
+name: Vocabulary Reminder
+
+on:
+  schedule:
+    - cron: '0 */2 * * *'  # Co 2 godziny
+  workflow_dispatch:       # Możliwość ręcznego uruchomienia
+
+jobs:
+  notify:
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Zainstaluj zależności
+        run: brew install jq
+
+      - name: Uruchom powiadomienie
+        run: ./scripts/vocab.sh
