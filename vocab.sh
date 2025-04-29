@@ -5,10 +5,21 @@ NTFY_TOPIC="vocab-reminder"
 API_WORDS="https://random-word-api.herokuapp.com/word?number=5"
 API_TRANSLATE="https://translate.argosopentech.com/translate"
 
-# Pobierz 5 słówek po angielsku
-words=$(curl -s "$API_WORDS" | jq -r '.[]')
+# Pobierz słówka
+response=$(curl -s "$API_WORDS")
 
-# Przygotowanie wiadomości
+# Sprawdź czy odpowiedź jest tablicą (czy zaczyna się od [ )
+if [[ $response != \[* ]]; then
+    echo "❗API słówek zwróciło błąd lub niepoprawny format."
+    message="⚠️ Błąd pobierania słówek. Spróbuj ponownie później."
+    curl -H "Title: Problem ze słówkami" -H "Tags: warning" -d "$message" "https://ntfy.sh/$NTFY_TOPIC"
+    exit 0
+fi
+
+# Jeśli wszystko OK, parsujemy
+words=$(echo "$response" | jq -r '.[]')
+
+# Przygotuj wiadomość
 message="🧠 *Twoje słówka:*\n"
 
 for word in $words; do
@@ -16,17 +27,17 @@ for word in $words; do
     translated=""
 
     while [ $retries -lt 3 ]; do
-        response=$(curl -s --max-time 5 -X POST "$API_TRANSLATE" \
+        response_translate=$(curl -s --max-time 5 -X POST "$API_TRANSLATE" \
             -H 'Content-Type: application/json' \
             -d "{\"q\":\"$word\", \"source\":\"en\", \"target\":\"pl\", \"format\":\"text\"}")
 
-        if [ -z "$response" ] || [[ "$response" == *"error"* ]]; then
+        if [ -z "$response_translate" ] || [[ "$response_translate" == *"error"* ]]; then
             ((retries++))
             sleep 1
             continue
         fi
 
-        translated=$(echo "$response" | jq -r '.translatedText')
+        translated=$(echo "$response_translate" | jq -r '.translatedText')
 
         if [ "$translated" != "null" ] && [ -n "$translated" ]; then
             break
