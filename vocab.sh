@@ -2,22 +2,11 @@
 
 # Konfiguracja
 NTFY_TOPIC="vocab-reminder"
-API_WORDS="https://random-word-api.herokuapp.com/word?number=5"
 API_TRANSLATE="https://translate.argosopentech.com/translate"
+WORDS_FILE="words.txt"
 
-# Pobierz słówka
-response=$(curl -s "$API_WORDS")
-
-# Sprawdź czy odpowiedź jest tablicą (czy zaczyna się od [ )
-if [[ $response != \[* ]]; then
-    echo "❗API słówek zwróciło błąd lub niepoprawny format."
-    message="⚠️ Błąd pobierania słówek. Spróbuj ponownie później."
-    curl -H "Title: Problem ze słówkami" -H "Tags: warning" -d "$message" "https://ntfy.sh/$NTFY_TOPIC"
-    exit 0
-fi
-
-# Jeśli wszystko OK, parsujemy
-words=$(echo "$response" | jq -r '.[]')
+# Losuj 5 słówek z lokalnego pliku
+words=$(shuf -n 5 "$WORDS_FILE")
 
 # Przygotuj wiadomość
 message="🧠 *Twoje słówka:*\n"
