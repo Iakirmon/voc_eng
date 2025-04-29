@@ -9,8 +9,7 @@ API_TRANSLATE="https://translate.googleapis.com/translate_a/single"
 words=$(shuf -n 5 "$WORDS_FILE")
 
 # Przygotuj wiadomość
-message="🧠 Twoje słówka:
-"
+message=""
 
 # Funkcja tłumaczenia słowa
 translate_word() {
@@ -52,7 +51,7 @@ translate_word() {
 # Pętla po słówkach
 for word in $words; do
   translated=$(translate_word "$word")
-  message+="$word → $translated
+  message+="$word: $translated
 "
 done
 
