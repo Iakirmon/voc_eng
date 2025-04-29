@@ -2,8 +2,8 @@
 
 # Konfiguracja
 NTFY_TOPIC="vocab-reminder"
-API_TRANSLATE="https://translate.argosopentech.com/translate"
 WORDS_FILE="words.txt"
+API_TRANSLATE="https://translate.googleapis.com/translate_a/single"
 
 # Losuj 5 słówek z lokalnego pliku
 words=$(shuf -n 5 "$WORDS_FILE")
@@ -12,36 +12,47 @@ words=$(shuf -n 5 "$WORDS_FILE")
 message="🧠 Twoje słówka:
 "
 
-for word in $words; do
-    retries=0
-    translated=""
+# Funkcja tłumaczenia słowa
+translate_word() {
+  local word="$1"
+  local retries=0
+  local translation=""
 
-    while [ $retries -lt 3 ]; do
-        response_translate=$(curl -s --max-time 5 -X POST "$API_TRANSLATE" \
-            -H 'Content-Type: application/json' \
-            -d "{\"q\":\"$word\", \"source\":\"en\", \"target\":\"pl\", \"format\":\"text\"}")
+  while [ $retries -lt 3 ]; do
+    response_translate=$(curl -s --max-time 5 --get --data-urlencode "client=gtx" \
+      --data-urlencode "sl=en" \
+      --data-urlencode "tl=pl" \
+      --data-urlencode "dt=t" \
+      --data-urlencode "q=$word" \
+      "$API_TRANSLATE")
 
-        if [ -z "$response_translate" ] || [[ "$response_translate" == *"error"* ]]; then
-            ((retries++))
-            sleep 1
-            continue
-        fi
-
-        translated=$(echo "$response_translate" | jq -r '.translatedText')
-
-        if [ "$translated" != "null" ] && [ -n "$translated" ]; then
-            break
-        fi
-
-        ((retries++))
-        sleep 1
-    done
-
-    if [ -z "$translated" ] || [ "$translated" == "null" ]; then
-        translated="(błąd tłumaczenia)"
+    if [ -z "$response_translate" ] || [[ "$response_translate" == *"Error"* ]]; then
+      ((retries++))
+      sleep 1
+      continue
     fi
 
-    message+="$word → $translated
+    translation=$(echo "$response_translate" | jq -r '.[0][0][0]')
+
+    if [ "$translation" != "null" ] && [ -n "$translation" ]; then
+      break
+    fi
+
+    ((retries++))
+    sleep 1
+  done
+
+  if [ -z "$translation" ] || [ "$translation" == "null" ]; then
+    translation="(błąd tłumaczenia)"
+  fi
+
+  echo "$translation"
+}
+
+# Pętla po słówkach
+for word in $words; do
+  translated=$(translate_word "$word")
+  message+="$word → $translated
 "
 done
 
