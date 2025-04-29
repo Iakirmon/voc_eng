@@ -9,7 +9,8 @@ WORDS_FILE="words.txt"
 words=$(shuf -n 5 "$WORDS_FILE")
 
 # Przygotuj wiadomość
-message="🧠 *Twoje słówka:*\n"
+message="🧠 Twoje słówka:
+"
 
 for word in $words; do
     retries=0
@@ -40,10 +41,11 @@ for word in $words; do
         translated="(błąd tłumaczenia)"
     fi
 
-    message+="$word → $translated\n"
+    message+="$word → $translated
+"
 done
 
-# Wysłanie powiadomienia na telefon przez ntfy
+# Wyślij powiadomienie
 curl -H "Title: Nowe słówka" -H "Tags: books" -d "$message" "https://ntfy.sh/$NTFY_TOPIC"
 
 exit 0
