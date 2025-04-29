@@ -2,25 +2,26 @@ name: Vocabulary Reminder
 
 on:
   schedule:
-    - cron: '0 */2 * * *'  # Co 2 godziny
-  workflow_dispatch:       # Możliwość ręcznego uruchomienia
+    - cron: '0 */4 * * *'  # Co 4 godziny
+  workflow_dispatch:        # Możliwość ręcznego uruchomienia
 
 jobs:
   notify:
-    runs-on: macos-latest
+    runs-on: ubuntu-latest   # Linux! (tańsze!)
 
     steps:
       - name: Checkout repo
         uses: actions/checkout@v3
 
-      - name: Sprawdź i zainstaluj jq
+      - name: Zainstaluj jq (jeśli potrzeba)
         run: |
           if ! command -v jq &> /dev/null; then
-            brew install jq
+            sudo apt-get update
+            sudo apt-get install -y jq
           fi
 
       - name: Ustaw uprawnienia do skryptu
-        run: chmod +x vocab.sh  # Poprawiona ścieżka
+        run: chmod +x voc_eng.sh
 
       - name: Uruchom skrypt
-        run: ./vocab.sh  # Poprawiona ścieżka
+        run: ./voc_eng.sh
