@@ -1,500 +1,500 @@
-cabin
-cable
-cactus
-cafe
-cage
-cake
-calendar
-calm
-camera
-camp
-canyon
-canvas
-captain
-capture
-career
-cargo
-carpet
-carrot
-cartoon
-carve
-castle
-category
-caution
-cave
-ceiling
-dairy
-dam
-damage
-dance
-danger
-dare
-dark
-data
-database
-date
-dawn
-daydream
-deadline
-deaf
-dealer
-debate
-debt
-decade
-decide
-decision
-declare
-decline
-decorate
-decrease
-deduce
-eager
-eagle
-ear
-early
-earthquake
-easily
-east
-eatery
-echo
-eclipse
-ecology
-economy
-edge
-edit
-educate
-effect
-effort
-egg
-either
-elaborate
-elder
-elect
-element
-elevate
-eliminate
-fabric
-face
-fact
-factor
-factory
-fade
-fail
-fair
-faith
-fake
-false
-fame
-familiar
-family
-famous
-fancy
-fantastic
-far
-farm
-farmer
-fashion
-fasten
-fatal
-father
-fatigue
-galaxy
-gallery
-gamble
-game
-gap
-garage
-garden
-garlic
-garment
-gate
-gather
-gauge
-gaze
-gear
-gender
-generate
-genius
-gentle
-genuine
-geography
-gesture
-ghost
-giant
-gift
-ginger
-habit
-habitat
-hair
-half
-hall
-halt
-hammer
-hand
-handle
-hanger
-happen
-happy
-harbor
-hard
-hardly
-harmony
-harvest
-hat
-hate
-haven
-hazard
-head
-health
-heap
-heart
-ice
-idea
-ideal
-identity
-idle
-ignite
-ignore
-illness
-illustration
-image
-imagine
-immense
-impact
-imply
-import
-impress
-improve
-impulse
-inch
-incident
-income
-increase
-index
-indicate
-indoor
-jacket
-jail
-jam
-jar
-jazz
-jealous
-jelly
-jewel
-job
-join
-joke
-journal
-journey
-judge
-juice
-kayak
-keen
-keep
-kernel
-kettle
-key
-kidnap
-kidney
-king
-kiss
-kite
-kitten
-kneel
-knight
-knowledge
-label
-labor
-lace
-ladder
-lady
-lake
-lamp
-land
-landlord
-landmark
-landscape
-lane
-language
-laptop
-large
-laser
-last
-late
-later
-laugh
-launch
-laundry
-layer
-lazy
-leader
-machine
-magic
-magnet
-mail
-maintain
-major
-make
-maker
-makeup
-mall
-manage
-manner
-mansion
-manual
-maple
-marble
-margin
-marine
-market
-marriage
-mask
-master
-match
-material
-mature
-nail
-name
-narrow
-nation
-native
-nature
-naval
-nearby
-neat
-necessary
-neck
-need
-needle
-negative
-negotiate
-neighbor
-neither
-nephew
-nerve
-nest
-network
-neutral
-never
-nevertheless
-newcomer
-oak
-oasis
-obey
-object
-objective
-observe
-obtain
-obvious
-occasion
-occupation
-ocean
-octopus
-odor
-offense
-offer
-office
-officer
-official
-often
-olive
-omit
-once
-ongoing
-onion
-online
-pace
-pack
-package
-page
-pair
-palace
-pale
-palm
-pan
-panel
-panic
-panorama
-paper
-parade
-parcel
-pardon
-parent
-park
-parliament
-parrot
-part
-particle
-partner
-party
-passive
-quack
-quail
-quake
-qualify
-quality
-quarrel
-quarter
-question
-queue
-quick
-rabbit
-race
-rack
-radar
-radio
-raft
-rage
-rail
-rainbow
-raise
-rally
-ranch
-random
-range
-rapid
-rare
-rating
-ratio
-reach
-react
-reader
-ready
-real
-reason
-rebuild
-sack
-sacred
-saddle
-safe
-sail
-saint
-salad
-salary
-sale
-salt
-sample
-sand
-satisfy
-sauce
-scale
-scan
-scatter
-scene
-schedule
-school
-science
-scissors
-score
-scratch
-screen
-table
-tackle
-talent
-talk
-tall
-tank
-tape
-target
-task
-taste
-taxi
-teach
-team
-tear
-temple
-tempo
-tenant
-tender
-tense
-terminal
-terrain
-testify
-theater
-theme
-therapy
-umbrella
-unable
-unaware
-uncle
-uncover
-under
-undergo
-understand
-undertake
-uniform
-unique
-unite
-universe
-unknown
-unlock
-unlikely
-until
-update
-uphold
-urban
-vacant
-vacation
-vaccine
-vague
-valid
-valley
-valuable
-value
-vanish
-variety
-various
-vast
-vector
-vehicle
-vendor
-venture
-verbal
-verify
-version
-vibrant
-wage
-waist
-wait
-wake
-walk
-wall
-walnut
-want
-warehouse
-warm
-warn
-warrior
-watch
-water
-wave
-wealth
-weapon
-weather
-weave
-website
-x-ray
-xenon
-xerox
-xylophone
-xenophobia
-yacht
-yard
-year
-yell
-yellow
-yesterday
-yield
-young
-youth
-yogurt
-zebra
-zero
-zest
-zigzag
-zinc
-zipper
-zone
-zoo
-zoom
-zucchini
+act up
+back down
+break down
+bring up
+call off
+carry on
+catch up
+check in
+come across
+come on
+cut down on
+do over
+dress up
+drop out
+fall apart
+figure out
+fill in
+find out
+get along (with)
+get away with
+get back
+get over
+give up
+go ahead
+go over
+grow up
+hang out
+hold on
+keep on
+kick off
+let down
+log in
+log out
+look after
+look forward to
+look into
+make up
+pass out
+pick up
+point out
+put off
+put up with
+run into
+set up
+show up
+shut down
+slow down
+stand out
+stick to
+take after
+take care of
+take off
+throw away
+turn down
+turn up
+wake up
+work out
+act up
+back down
+break down
+bring up
+call off
+carry on
+catch up
+check in
+come across
+come on
+cut down on
+do over
+dress up
+drop out
+fall apart
+figure out
+fill in
+find out
+get along (with)
+get away with
+get back
+get over
+give up
+go ahead
+go over
+grow up
+hang out
+hold on
+keep on
+kick off
+let down
+log in
+log out
+look after
+look forward to
+look into
+make up
+pass out
+pick up
+point out
+put off
+put up with
+run into
+set up
+show up
+shut down
+slow down
+stand out
+stick to
+take after
+take care of
+take off
+throw away
+turn down
+turn up
+wake up
+work out
+act up
+back down
+break down
+bring up
+call off
+carry on
+catch up
+check in
+come across
+come on
+cut down on
+do over
+dress up
+drop out
+fall apart
+figure out
+fill in
+find out
+get along (with)
+get away with
+get back
+get over
+give up
+go ahead
+go over
+grow up
+hang out
+hold on
+keep on
+kick off
+let down
+log in
+log out
+look after
+look forward to
+look into
+make up
+pass out
+pick up
+point out
+put off
+put up with
+run into
+set up
+show up
+shut down
+slow down
+stand out
+stick to
+take after
+take care of
+take off
+throw away
+turn down
+turn up
+wake up
+work out
+act up
+back down
+break down
+bring up
+call off
+carry on
+catch up
+check in
+come across
+come on
+cut down on
+do over
+dress up
+drop out
+fall apart
+figure out
+fill in
+find out
+get along (with)
+get away with
+get back
+get over
+give up
+go ahead
+go over
+grow up
+hang out
+hold on
+keep on
+kick off
+let down
+log in
+log out
+look after
+look forward to
+look into
+make up
+pass out
+pick up
+point out
+put off
+put up with
+run into
+set up
+show up
+shut down
+slow down
+stand out
+stick to
+take after
+take care of
+take off
+throw away
+turn down
+turn up
+wake up
+work out
+act up
+back down
+break down
+bring up
+call off
+carry on
+catch up
+check in
+come across
+come on
+cut down on
+do over
+dress up
+drop out
+fall apart
+figure out
+fill in
+find out
+get along (with)
+get away with
+get back
+get over
+give up
+go ahead
+go over
+grow up
+hang out
+hold on
+keep on
+kick off
+let down
+log in
+log out
+look after
+look forward to
+look into
+make up
+pass out
+pick up
+point out
+put off
+put up with
+run into
+set up
+show up
+shut down
+slow down
+stand out
+stick to
+take after
+take care of
+take off
+throw away
+turn down
+turn up
+wake up
+work out
+act up
+back down
+break down
+bring up
+call off
+carry on
+catch up
+check in
+come across
+come on
+cut down on
+do over
+dress up
+drop out
+fall apart
+figure out
+fill in
+find out
+get along (with)
+get away with
+get back
+get over
+give up
+go ahead
+go over
+grow up
+hang out
+hold on
+keep on
+kick off
+let down
+log in
+log out
+look after
+look forward to
+look into
+make up
+pass out
+pick up
+point out
+put off
+put up with
+run into
+set up
+show up
+shut down
+slow down
+stand out
+stick to
+take after
+take care of
+take off
+throw away
+turn down
+turn up
+wake up
+work out
+act up
+back down
+break down
+bring up
+call off
+carry on
+catch up
+check in
+come across
+come on
+cut down on
+do over
+dress up
+drop out
+fall apart
+figure out
+fill in
+find out
+get along (with)
+get away with
+get back
+get over
+give up
+go ahead
+go over
+grow up
+hang out
+hold on
+keep on
+kick off
+let down
+log in
+log out
+look after
+look forward to
+look into
+make up
+pass out
+pick up
+point out
+put off
+put up with
+run into
+set up
+show up
+shut down
+slow down
+stand out
+stick to
+take after
+take care of
+take off
+throw away
+turn down
+turn up
+wake up
+work out
+act up
+back down
+break down
+bring up
+call off
+carry on
+catch up
+check in
+come across
+come on
+cut down on
+do over
+dress up
+drop out
+fall apart
+figure out
+fill in
+find out
+get along (with)
+get away with
+get back
+get over
+give up
+go ahead
+go over
+grow up
+hang out
+hold on
+keep on
+kick off
+let down
+log in
+log out
+look after
+look forward to
+look into
+make up
+pass out
+pick up
+point out
+put off
+put up with
+run into
+set up
+show up
+shut down
+slow down
+stand out
+stick to
+take after
+take care of
+take off
+throw away
+turn down
+turn up
+wake up
+work out
+act up
+back down
+break down
+bring up
+call off
+carry on
+catch up
+check in
+come across
+come on
+cut down on
+do over
+dress up
+drop out
+fall apart
+figure out
+fill in
+find out
+get along (with)
+get away with
+get back
+get over
+give up
+go ahead
+go over
+grow up
+hang out
+hold on
+keep on
+kick off
+let down
+log in
+log out
+look after
+look forward to
+look into
+make up
+pass out
+pick up
+point out
+put off
+put up with
+run into
+set up
