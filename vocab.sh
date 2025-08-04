@@ -5,13 +5,13 @@ NTFY_TOPIC="vocab-reminder"
 WORDS_FILE="words.txt"
 API_TRANSLATE="https://translate.googleapis.com/translate_a/single"
 
-# Losuj 5 słówek z lokalnego pliku
-words=$(shuf -n 5 "$WORDS_FILE")
+# Losuj 5 linii (frazy) z pliku
+IFS=$'\n' read -r -d '' -a words < <(shuf -n 5 "$WORDS_FILE" && printf '\0')
 
 # Przygotuj wiadomość
 message=""
 
-# Funkcja tłumaczenia słowa
+# Funkcja tłumaczenia zwrotu
 translate_word() {
   local word="$1"
   local retries=0
@@ -48,11 +48,10 @@ translate_word() {
   echo "$translation"
 }
 
-# Pętla po słówkach
-for word in $words; do
-  translated=$(translate_word "$word")
-  message+="$word: $translated
-"
+# Tłumaczenie i budowanie wiadomości
+for phrase in "${words[@]}"; do
+  translated=$(translate_word "$phrase")
+  message+="$phrase: $translated"$'\n'
 done
 
 # Wyślij powiadomienie
